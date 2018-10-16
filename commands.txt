@@ -1,0 +1,176 @@
+Creating a new project
+django-admin startproject projectname
+
+Add an app to a project
+python3 manage.py startapp appname
+
+Starting the server
+python3 manage.py runserver
+
+Creating migrations
+python3 manage.py makemigrations
+
+Migrate the database
+python3 manage.py migrate
+
+Creating a Super User for the admin panel
+python3 manage.py createsuperuser
+
+Collecting static files into one folder
+python3 manage.py collectstatic
+
+
+------------
+pip3 install virtualenv
+typicall create virutal environment
+
+ in folder next to project folder type:
+virtualenv namegoeshere
+
+activate virtualenv
+source virtualenvirnomentnamehere/bin/activate
+
+to get out of virtual env type:
+deactivate
+
+while in env install everything you need
+django-admin startproject projectnamegoeshere
+
+cd into project folder
+pip3 install django
+install everything else you need
+
+
+make a git ignore file in the project folder called:
+.gitignore
+
+go to https://www.gitignore.io/api/django
+and paste what to ignore, we previously used
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+/media
+/static
+
+
+initialize as git repo, while in folder
+git init
+git add -A
+git commit -m "first commit"
+
+
+while in the terminal and the project folder run the server
+python3 manage.py runserver
+
+to start an app and create a folder for it type:
+python3 manage.py startapp appnamehere
+
+go into the project settings folder and type in additional apps that you made by typing in the app folder
+'appfolder.apps.configmethodnamehere'
+
+add models:
+you can reference django model fields list online
+class Job(models.Model):
+	image = models.ImageField(upload_to='')
+	summary = models.CharField(max_length=200)
+
+follow command prompt suggestion to add stuff when starting runserver
+
+go down to bottom of settings and add where it will set media files
+type:
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+pip3 install pillow
+
+
+create postgres db
+open postgres click the postgres db
+type \du to see users
+for password type: \password postgres  then enter it
+for db creation type:
+CREATE DATABASE namehere;
+
+go to project settings.py folder in databases change to the following
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'namehere',
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
+
+
+
+need to create admin account by creating super user
+python manage.py createsuperuser
+user: ryan
+email: ryan.weaver718@gmail.com
+password: demopassword12345
+
+restart server
+
+go to admin.py to add models
+from .models import Job  //job is the name of the model
+admin.site.register(Job)
+
+then type:
+python manage.py makemigrations
+python manage.py migrate
+
+in urls folder after the url patters [ ] type:
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+also import:
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+to add views 
+add additional views under app folder views.py:
+def pagename(request):
+	return render(request, 'newappfolderintemplate/pagename.html')
+	return render(request, 'jobs/home.html')
+then go to urls and
+import.appnamefolder.views
+then add
+path('pagename/', appnamefolder.views.pagemethod, name='namehere'),
+path('/', jobs.views.home, name='home')
+
+in the appfolder (jobs)
+create new directory (templates), in that directory create another directory (jobs)
+in the jobs directory create the html file "home.html"
+
+
+in jobs views directory add import and dictionary of Job objects
+from .models import Jobs
+def home(request):
+	jobs = Jobs.objects
+	return render(request, 'jobs/home.html', {'jobs': jobs} )
+
+
+
+
+
+virtualenv
+In your Command Prompt enter:
+
+pip install virtualenv
+Launch virtualenv
+In your Command Prompt navigate to your project:
+
+cd your_project
+Within your project:
+
+virtualenv env
+Activate your virtualenv:
+
+on Windows, virtualenv creates a batch file
+
+\env\Scripts\activate.bat
+to activate virtualenv on Windows, activate script is in the Scripts folder :
+
+\path\to\env\Scripts\activate
+
+*****THIS ACTIVATES
+.\env\Scripts\activate
