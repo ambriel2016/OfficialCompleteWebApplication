@@ -1,34 +1,36 @@
 from django.contrib import auth
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, urls
 from django.contrib.auth.forms import UserCreationForm
 
 
 # Create your views here.
-def signup(request):
-	if request.method == 'POST':
+def register(request):
+	if request.method=='POST':
 		form = UserCreationForm(request.POST)
+
+	# 	form.save creates the new user
 		if form.is_valid():
 			form.save()
-			username = form.cleaned_data.get('username')
-			raw_password = form.cleaned_data.get('password1')
-			user = authenticate(username=username, password=raw_password)
+			username = form.cleaned_data['username']
+			password = form.cleaned_data['password1']
+			user = authenticate(username=username, password=password)
 			login(request, user)
-			return redirect('dashboard')
+			redirect('index')
 	else:
 		form = UserCreationForm()
-		return render(request, 'accounts/signup.html', {'form': form})
+
+	context = {'form': form}
+	return render(request, 'accounts/signup.html', context)
 
 
-def signin(request):
-	return render(request, 'accounts/signin.html')
+def login(request):
+	return render(request, 'registration/login.html')
 
 
 def logout(request):
-	# TODO need to route to home page and don't forget to signout
-	# and don't forget to signout
-	return render(request, '')
+	return render(request, 'registration/login.html')
 
 
 def urlsinput(request):
@@ -41,3 +43,6 @@ def output(request):
 
 def dashboard(request):
 	return render(request, 'accounts/dashboard.html')
+
+def index(request):
+	return render(request, 'accounts/index.html')

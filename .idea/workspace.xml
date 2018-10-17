@@ -10,43 +10,59 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-110447578">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="9" />
+          <entry key="html" value="14" />
           <entry key="png" value="2" />
-          <entry key="py" value="9" />
+          <entry key="py" value="20" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="9" />
+          <entry key="HTML" value="14" />
           <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="9" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="307" />
-          <entry key="py" value="185" />
+          <entry key="html" value="1033" />
+          <entry key="py" value="884" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="307" />
-          <entry key="Python" value="185" />
+          <entry key="HTML" value="1033" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="884" />
         </counts>
       </usages-collector>
     </session>
@@ -92,24 +108,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/templates/jobs/home.html">
+        <entry file="file://$PROJECT_DIR$/jobscanner/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+            <state relative-caret-position="136">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <marker date="1539799228000" expanded="true" signature="656:743" ph="..." />
+                <marker date="1539799228000" expanded="true" signature="1133:1181" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/views.py">
+        <entry file="file://$PROJECT_DIR$/jobscanner/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jobscanner/tests.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobscanner/views.py">
+        <entry file="file://$PROJECT_DIR$/PythonProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="442">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+              <folding>
+                <element signature="e#637#669#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,57 +154,34 @@
         <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobscanner/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonProject/.gitignore">
+        <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commands.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" selection-start-line="54" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobscanner/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/signup2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jobscanner/templates/registration/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="170">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -188,17 +201,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PythonProject/settings.py" />
         <option value="$PROJECT_DIR$/jobscanner/templates/accounts/output.html" />
         <option value="$PROJECT_DIR$/jobscanner/templates/accounts/urlsinput.html" />
-        <option value="$PROJECT_DIR$/PythonProject/urls.py" />
-        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/signin.html" />
         <option value="$PROJECT_DIR$/jobs/templates/jobs/home.html" />
-        <option value="$PROJECT_DIR$/jobscanner/urls.py" />
-        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/signup.html" />
-        <option value="$PROJECT_DIR$/jobscanner/views.py" />
         <option value="$PROJECT_DIR$/jobscanner/templates/accounts/dashboard.html" />
         <option value="$PROJECT_DIR$/PythonProject/.gitignore" />
+        <option value="$PROJECT_DIR$/commands.txt" />
+        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/signin2.html" />
+        <option value="$PROJECT_DIR$/PythonProject/settings.py" />
+        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/signin.html" />
+        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/signup.html" />
+        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/index.html" />
+        <option value="$PROJECT_DIR$/jobscanner/urls.py" />
+        <option value="$PROJECT_DIR$/jobscanner/templates/accounts/login.html" />
+        <option value="$PROJECT_DIR$/jobscanner/views.py" />
+        <option value="$PROJECT_DIR$/PythonProject/urls.py" />
+        <option value="$PROJECT_DIR$/jobscanner/templates/registration/login.html" />
       </list>
     </option>
   </component>
@@ -209,10 +227,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="58" />
-    <option name="width" value="1054" />
-    <option name="height" value="968" />
+    <option name="x" value="-7" />
+    <option name="width" value="1116" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -220,8 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,19 +265,28 @@
             <path>
               <item name="PythonProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jobscanner" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProject" type="462c0819:PsiDirectoryNode" />
               <item name="PythonProject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539735905298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539800216897" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -279,15 +303,16 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\WindowsPython\PythonProject\PythonProject\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WindowsPython\PythonProject\jobscanner" />
       <recent name="D:\WindowsPython\PythonProject" />
       <recent name="D:\WindowsPython\PythonProject\PythonProject" />
       <recent name="D:\WindowsPython\PythonProject\jobs" />
       <recent name="D:\WindowsPython\PythonProject\blog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WindowsPython\PythonProject\jobscanner\templates\registration" />
+      <recent name="D:\WindowsPython\PythonProject\PythonProject\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -314,17 +339,19 @@
       <updated>1539716247719</updated>
       <workItem from="1539716249862" duration="5830000" />
       <workItem from="1539730511108" duration="5450000" />
-      <workItem from="1539778452878" duration="628000" />
+      <workItem from="1539778452878" duration="1432000" />
+      <workItem from="1539779910521" duration="11282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11908000" />
+    <option name="totallyTimeSpent" value="23994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="58" width="1054" height="968" extended-state="0" />
+    <frame x="-7" y="0" width="1116" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19014084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18276516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -332,14 +359,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3297362" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30120483" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -350,9 +377,39 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="8" weight="0.10393873" />
       <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21115974" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30120483" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.10393873" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -390,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/output.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -411,34 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/JobDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/Nlp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobs/templates/jobs/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -449,43 +471,8 @@
     <entry file="file://$PROJECT_DIR$/jobs/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobscanner/templates/base.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" selection-start-line="54" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/signup2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonProject/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -494,10 +481,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/23.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/signup2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="126" column="40" lean-forward="true" selection-start-line="126" selection-start-column="40" selection-end-line="127" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/Nlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/JobDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/signup.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/templates/accounts/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <marker date="1539799228000" expanded="true" signature="656:743" ph="..." />
+            <marker date="1539799228000" expanded="true" signature="1133:1181" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobscanner/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>

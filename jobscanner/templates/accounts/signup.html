@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Sign up</h2>
-    <form method="post">
+
+
+
+
+    {% if next %}
+        <p> Hey, you can't access that page</p>
+    {% endif %}
+    <h2>Sign Up</h2>
+    <body>
+    <form method="post" action="{% url 'signup' %}">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Sign up</button>
+        {% if form.errors %}
+            <p>There is an error with something you entered</p>
+        {% endif %}
+        {{ form }}
+        <input type="submit" value="signup">
     </form>
+    </body>
 {% endblock %}

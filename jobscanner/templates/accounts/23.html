@@ -4,6 +4,18 @@
 
 
     <body class="text-center">
+    {%  if form.errors %}
+    <p>There is an error with something you entered</p>
+    {% endif %}
+
+
+    {% if next %}
+    <p> Hey, you can't access that page</p>
+    {% endif %}
+
+
+
+
     <form class="form-signin">
         <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
