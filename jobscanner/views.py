@@ -22,7 +22,7 @@ def register(request):
 		form = UserCreationForm()
 
 	context = {'form': form}
-	return render(request, 'accounts/signup.html', context)
+	return render(request, 'registration/register.html', context)
 
 
 def login(request):

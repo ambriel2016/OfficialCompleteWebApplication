@@ -10,13 +10,13 @@
     {% endif %}
     <h2>Sign Up</h2>
     <body>
-    <form method="post" action="{% url 'signup' %}">
+    <form method="post" action="{% url 'register' %}">
         {% csrf_token %}
         {% if form.errors %}
             <p>There is an error with something you entered</p>
         {% endif %}
         {{ form }}
-        <input type="submit" value="signup">
+        <input type="submit" value="register">
     </form>
     </body>
 {% endblock %}

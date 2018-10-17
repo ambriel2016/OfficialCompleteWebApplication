@@ -14,12 +14,15 @@
     <br/>
     <form method="post" action="{% url 'login' %}">
         {% csrf_token %}
-        <p >Username: {{ form.username }}</p>
+        <p>Username: {{ form.username }}</p>
         <p>Password: {{ form.password }}</p>
         <p><input class="btn btn-primary" type="submit" value="Sign In"></p>
 {#        next is whatever url they are trying to access#}
         <input type="hidden" name="next" value="{{ next }}">
         <br/>
+        <p>Don't have an account yet?</p>
+        <a class="btn btn-secondary btn-sm" href="{% url 'register' %}" role="button">Click here to register</a>
+        <p></p>
         <br/>
         <br/>
     </form>
