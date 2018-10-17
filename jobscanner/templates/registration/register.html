@@ -3,12 +3,12 @@
 {% block content %}
 
 
-
-
+<div class="vcentercontainer">
+    <div class="container">
     {% if next %}
         <p> Hey, you can't access that page</p>
     {% endif %}
-    <h2>Sign Up</h2>
+    <h2>Registration Page</h2>
     <body>
     <form method="post" action="{% url 'register' %}">
         {% csrf_token %}
@@ -19,4 +19,6 @@
         <input type="submit" value="register">
     </form>
     </body>
+    </div>
+</div>
 {% endblock %}
