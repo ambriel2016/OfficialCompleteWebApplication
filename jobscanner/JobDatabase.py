@@ -1,6 +1,6 @@
 import random
 import sqlite3
-import Nlp
+from jobscanner import Nlp
 import datetime
 import nltk
 from nltk.stem.snowball import SnowballStemmer
@@ -17,13 +17,13 @@ class JobDatabase:
     c3 = "keyword"
     c4 = "count"
     c5 = "dt"
-    dbfile = "final_words.db"
+    dbfile = "db.sqlite3"
 
     @staticmethod
     def process_data(user_dict={}):
         lm = WordNetLemmatizer()
 
-        db = sqlite3.connect("final_words.db")
+        db = sqlite3.connect("db.sqlite3")
         cur = db.cursor()
         db.execute("CREATE TABLE IF NOT EXISTS inputs (user TEXT, job_number TEXT, job TEXT, dt TEXT)")
         db.execute(

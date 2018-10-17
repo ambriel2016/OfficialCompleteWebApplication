@@ -1,0 +1,76 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Results</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <!--regular keyword table in first column-->
+            <table class="table table-striped table-dark">
+                <thead>
+                <tr>
+                    {% for heading in h %}
+                <tr>
+                    {% for t in heading %}
+                    <td>{{ t }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+                </tr>
+                </thead>
+                <tbody>
+                {% for row in table %}
+                <tr>
+                    {% for item in row %}
+                <tr>
+                    {% for x in item %}
+                    <td>{{ x }}</td>
+                    {% endfor %}
+                <tr>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm">
+            <!--lemma keyword table in second column-->
+            <table class="table table-striped table-dark">
+                <thead>
+                <tr>
+                    {% for heading in h %}
+                <tr>
+                    {% for t in heading %}
+                    <td>{{ t }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+                </tr>
+                </thead>
+                <!--lemma table-->
+                {% for row in ltable %}
+                <tr>
+                    {% for item in row %}
+                <tr>
+                    {% for x in item %}
+                    <td>{{ x }}</td>
+                    {% endfor %}
+                <tr>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
