@@ -59,7 +59,10 @@ class Nlp:
         # open the remove words and get them into an trimmed string that will be made into a list
         path = os.getcwd()
         try:
-            with open(path+"\jobscanner\Remove.txt", "r") as f:
+            # Windows
+            # with open(path+"\jobscanner\Remove.txt", "r") as f:
+            # Mac
+            with open(path+"/jobscanner/Remove.txt", "r") as f:
                 for line in f:
                     remove_words.append(line)
         except IOError as exc:
@@ -74,8 +77,10 @@ class Nlp:
         token_remove_words.sort()
 
         try:
-
-            with open(path+"\jobscanner\RemoveOutput.txt", "w+") as f:
+            # Windows
+            # with open(path+"\jobscanner\RemoveOutput.txt", "w+") as f:
+            # Mac
+            with open(path+"/jobscanner/RemoveOutput.txt", "w+") as f:
                 for word in token_remove_words:
                     f.write(word + "\n")
         except IOError as exc:
