@@ -106,6 +106,6 @@ class JobDatabase:
     def jobtable_sql_query(user_name):
         select = str("SELECT dt, title, company FROM inputs ")
         where = str("WHERE user = '" + user_name + "'")
-        order = "ORDER BY dt DESC"
+        order = "ORDER BY dt ASC"
         jt_sql_query = str(select + where + order)
         return jt_sql_query

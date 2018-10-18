@@ -50,7 +50,7 @@ def urlsinput(request):
 		user_dict.update({request.user.get_username(): job_data})
 
 		JobDatabase.JobDatabase.process_data(user_dict)
-		headers = ["Keyword", "Total Sum", "Count Sum"]
+		key_headers = ["Keyword", "Total Sum", "Count Sum"]
 
 		# Reg table
 		sql_query = JobDatabase.JobDatabase.sql_query(request.user.get_username())
@@ -66,16 +66,15 @@ def urlsinput(request):
 		lemma_table = lemmcur.fetchall()
 
 		# job Table
+		job_headers = ["Date", "Position", "Company"]
 		jobcur = db.cursor()
 		jt_query = JobDatabase.JobDatabase.jobtable_sql_query(request.user.get_username())
 		jobcur.execute(jt_query)
 		job_table = jobcur.fetchall()
-		print(job_table)
 
 
 
-		context = ({'table': reg_table, 'h': headers, 'ltable': lemma_table})
-		# {'table': reg_table}, {'h': headers}, {'ltable': lemma_table}
+		context = ({'table': reg_table, 'h': key_headers, 'ltable': lemma_table, 'jh':job_headers, 'jobtable':job_table})
 		return render(request, 'accounts/table.html', context)
 
 	return render(request, 'accounts/urlsinput.html')
