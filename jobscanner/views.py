@@ -31,6 +31,7 @@ def register(request):
 def urlsinput(request):
 	if request.method == 'POST':
 		user_dict = {}
+		job_data=[]
 		jobs = []
 		URLS = request.POST.get('urltext')
 		URLS = URLS.split('https://')
@@ -39,11 +40,14 @@ def urlsinput(request):
 				nURL = str('https://' + URL)
 				# trim tabs spaces and new lines from right and left hand sides of the URL
 				nURL = nURL.strip(' \t\r\n')
-				job_description = GetHTMLDescription.GetHTMLDescription.get_desc(nURL)
-				jobs.append(job_description)
+				# get job title, company name and job text into a dictionary
+				job_dict = GetHTMLDescription.GetHTMLDescription.get_desc(nURL)
+				#appened the arrary list of job_data with the job_dict
+				job_data.append(job_dict)
 
-		# input new user data into inputs table
-		user_dict.update({request.user.get_username(): jobs})
+
+		# create a dictionary with the user name and the array list of job_data
+		user_dict.update({request.user.get_username(): job_data})
 
 		JobDatabase.JobDatabase.process_data(user_dict)
 		headers = ["Keyword", "Total Sum", "Count Sum"]
@@ -60,6 +64,16 @@ def urlsinput(request):
 		lemma_query = JobDatabase.JobDatabase.lemma_sql_query(request.user.get_username())
 		lemmcur.execute(lemma_query)
 		lemma_table = lemmcur.fetchall()
+
+		# job Table
+		jobcur = db.cursor()
+		jt_query = JobDatabase.JobDatabase.jobtable_sql_query(request.user.get_username())
+		jobcur.execute(jt_query)
+		job_table = jobcur.fetchall()
+		print(job_table)
+
+
+
 		context = ({'table': reg_table, 'h': headers, 'ltable': lemma_table})
 		# {'table': reg_table}, {'h': headers}, {'ltable': lemma_table}
 		return render(request, 'accounts/table.html', context)
