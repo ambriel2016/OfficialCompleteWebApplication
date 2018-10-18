@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+<br/>
+<br/>
+<br/>
 <div class="form-group">
+
     <form action="/jobscanner/table" method="post">
         {% csrf_token %}
         <textarea name="urltext"></textarea>
@@ -17,3 +22,4 @@
 </div>
 </body>
 </html>
+{% endblock %}

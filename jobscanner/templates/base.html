@@ -15,6 +15,9 @@
 
     <!-- Custom styles for this template -->
 
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
@@ -28,10 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#">Dashboard</a>
-                <a class="nav-item nav-link" href="#">Input Jobs</a>
+                <a class="nav-item nav-link" href="{% url 'urlsinput' %}">Input Jobs</a>
                 <a class="nav-item nav-link" href="#">View Jobs</a>
-                <a class="nav-item nav-link" href="#">View Results</a>
-                <a class="nav-item nav-link" href="https://www.linkedin.com/in/ryanweaver2/">LinkedIn</a>
+                <a class="nav-item nav-link" href="{% url 'table' %}">View Results</a>
+                <a class="nav-item nav-link" href="{% url 'home' %}">Back To Home Page</a>
                 <a class="nav-item nav-link disabled" href="#">Disabled</a>
             </div>
         </div>
