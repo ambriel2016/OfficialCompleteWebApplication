@@ -11,6 +11,7 @@ cymem==1.31.2
 cytoolz==0.9.0.1
 dill==0.2.8.2
 Django==2.1.2
+django-heroku==0.3.1
 django-login==1.0
 django-security==0.9.6
 dominate==2.3.4
